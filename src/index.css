@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background: #faee11;
+}
+
+form {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+form button,
+form h5 {
+    margin: 20px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-color: #ec407a;
+    box-shadow: none;
+}
