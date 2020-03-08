@@ -3,10 +3,14 @@ import React from "react";
 import ProjectSummary from "./ProjectSummary";
 
 const ProjectList = ({ projects }) => {
-  const projectList = projects.map(project => {
-    return <ProjectSummary key={project.id} project={project} />;
-  });
-  return <div className="project-list section">{projects && projectList}</div>;
+  return (
+    <div className="project-list section">
+      {projects &&
+        projects.map(project => {
+          return <ProjectSummary key={project.id} project={project} />;
+        })}
+    </div>
+  );
 };
 
 export default ProjectList;
